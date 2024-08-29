@@ -10,26 +10,30 @@ public class Ex6 {
 		String peca1 = sc.nextLine();
 
 		System.out.println("Digite quantas peças você deseja:");
-		int qt1 = sc.nextInt();
+		String qt1 = sc.nextLine();
+		int qts1Int = Integer.parseInt(qt1);
 
-		int valorPeca1 = 10;
-
-		valorPeca1 = valorPeca1 * qt1;
+		System.out.println("Digite o valor das peças:");
+		String valorPeca1 = sc.nextLine();
+		int valor1Int = Integer.parseInt(valorPeca1);
 
 		System.out.println("Digite o nome da segunda peça:");
 		String peca2 = sc.nextLine();
 
 		System.out.println("Digite quantas peças você deseja:");
-		int qt2 = sc.nextInt();
+		String qt2 = sc.nextLine();
+		int qts2Int = Integer.parseInt(qt2);
 
-		int valorPeca2 = 10;
+		System.out.println("Digite o valor das peças:");
+		int valorPeca2 = sc.nextInt();
+		
+		valor1Int = valor1Int * qts1Int;
 
-		valorPeca2 = valorPeca2 * qt2;
+		valorPeca2 = valorPeca2 * qts2Int;
 
-		double valorPago = valorPeca2 + valorPeca1;
+		double valorPago = valorPeca2 + valor1Int;
 
 		System.out.println("O valor final das peças " + peca1 + " e " + peca2 + " ficou em: " + valorPago);
-		System.out.println("Lembrando que o valor de todas as peças são 10 rael");
 
 		sc.close();
 	}

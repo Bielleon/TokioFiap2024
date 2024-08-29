@@ -19,11 +19,11 @@ public class Ex8 {
 		//double d1 = d;
 		//float  d = (float) d1;
 
-		System.out.println("Em dolar: " + d);
-		System.out.println("Em Euro: " + e);
-		System.out.println("Em Peso Argentino: " + p);
-		System.out.println("Em Libra: " + l);
-		System.out.println("Em Iene: " + i);
+		System.out.printf("Em dolar: %.2f \n", d);
+		System.out.printf("Em Euro: %.2f \n", e);
+		System.out.printf("Em Peso Argentino: %.2f \n", p);
+		System.out.printf("Em Libra: %.2f \n", l);
+		System.out.printf("Em Iene: %.2f \n", i);
 
 		sc.close();
 	}
