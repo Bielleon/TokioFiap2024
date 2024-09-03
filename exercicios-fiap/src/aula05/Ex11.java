@@ -13,11 +13,13 @@ public class Ex11 {
 
 		int ano = vida / 365;
 
-		int meses = vida / 30;
+		int meses = (vida % 365) / 30;
+		
+		int dias = vida % 365 % 30;
 
 		System.out.println("Anos que voce viveu: " + ano);
 		System.out.println("Meses que voce viveu: " + meses);
-		System.out.println("Dias que voce viveu: " + vida);
+		System.out.println("Dias que voce viveu: " + dias);
 
 		sc.close();
 	}
